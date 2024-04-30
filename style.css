@@ -1,0 +1,829 @@
+/* -----------------------------------------------------------------------------------------------------------
+                                                    Main
+----------------------------------------------------------------------------------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#search-mostafa{
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    padding-left: 10%;
+    height: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.header-mostafa{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 55%;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(79, 79, 79);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.xyz-mostafa{
+    height: 100px;
+    box-shadow: 0px 1px 0px grey;
+}
+
+.nag-mostafa{
+    font-size:50px ;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.all-mostafa{
+    display: flex;
+    font-size: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    margin-right: 0%;
+}
+
+.sig-mostafa{
+    background-color: #eee;
+    border:0px transparent solid;
+    border-radius: 60px;
+}
+
+.all-mostafa div{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.all-mostafa img{
+    margin-right: 8px;
+}
+
+.lec-mostafa:hover,.qui-mostafa:hover,.log-mostafa:hover{
+    border:0px transparent solid;
+    border-radius: 60px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.sig-mostafa:hover{
+    border:0px transparent solid;
+    border-radius: 60px;
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.header-mostafa p:hover{
+    cursor: pointer;
+}
+
+#aside_div_main-mostafa{
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9f9;
+    font-size: 25px;
+    color: rgb(79, 79, 79);
+    height: 710px;
+    margin-left:60% ;
+    transition-duration: 1s;
+    transition-delay: 0.001s;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+}
+
+
+
+#nested_aside_div_main-mostafa{
+    display: none;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 1s;
+    width: 70%;
+    margin-left: 15%;
+    transition-delay: 1s;
+}
+
+.icons-mostafa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border: solid black 0px;
+    border-radius: 15px;
+}
+
+.result-mostafa{
+    border-radius: 0px;
+    background-color: rgb(227, 227, 227);
+    display: none;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(79, 79, 79);
+}
+
+.icons-mostafa:hover{
+    cursor: pointer;
+    background-color: rgb(227, 227, 227);
+}
+
+#setting-mostafa img:hover{
+    cursor: pointer;
+}
+
+.year-mostafa{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: rgb(79, 79, 79);
+}
+
+.bar-mostafa{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sheet-mostafa{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(46, 213, 254);
+    position: relative;
+}
+
+.b_circle-mostafa{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border:0px transparent solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    border-radius: 50px;
+    display: flex;
+    position: absolute;
+}
+
+.s_circle-mostafa{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(46, 213, 254);
+    border:0px transparent solid;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    border-radius: 40px;
+}
+
+.phy-mostafa{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bio-mostafa{
+    width: 70%;
+    height: 300px;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border:1px solid rgb(79, 79, 79);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.image-mostafa{
+    margin-top: 10px;
+    width: 98%;
+    height: 35%;
+    background-color: rgb(227, 227, 227);
+    border:1px solid rgb(79, 79, 79);
+    border-radius: 20px;
+    color: rgb(79, 79, 79);
+    display: flex;
+    align-items: center;
+}
+
+.image-mostafa img{
+    border-radius: 40px;
+    margin-left:0.5% ;
+}
+
+.mr-mostafa{
+    font-size: 30px;
+    margin-left: 4%;
+}
+
+.paragraph-mostafa{
+    margin: 3% 2% 4% 2%;
+    font-size: 25px;
+}
+
+.book-mostafa{
+    margin-bottom: 60px;
+    margin-left: 42.5%;
+    font-size:25px ;
+    width: 15%;
+    height: 50px;
+    background-color:rgb(32, 174, 209);
+    color: white;
+    display: flex;
+    align-items: center;
+    border: transparent solid 1px;
+    border-radius:10px;
+    justify-content: center;
+}
+
+.book-mostafa:hover{
+    background-color: rgb(39, 187, 224);
+    cursor: pointer;
+}
+
+.nawar-mostafa{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(184, 237, 250) ;
+}
+
+.chapter-mostafa{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    display: flex;
+    justify-content: center;
+    margin:40px 0px;
+}
+
+.vid-mostafa{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nawar_trailer-mostafa{
+    width: 70%;
+    border: rgb(79, 79, 79) solid 5px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color: black;
+}
+
+.academy-mostafa{
+    height: 50px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(43, 203, 43);
+    color: white;
+    font-size: 25px;
+    width: 30%;
+}
+
+.academy-mostafa:hover{
+    cursor: pointer;
+    background-color:rgb(58, 210, 58) ;
+}
+
+.ch_1-mostafa,.ch_2-mostafa{
+    height: 600px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ch_1-mostafa{
+    background-color: rgb(51, 243, 189);
+}
+
+.ch_2-mostafa{
+    background-color: rgb(50 130 177);
+}
+
+.lecture_1-mostafa{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.adr_1-mostafa{
+    font-size: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.choice_1-mostafa{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.l_1-mostafa,.q_1-mostafa{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius:10px ;
+    color: white;
+}
+
+.l_1-mostafa{
+    background-color: rgb(32, 174, 209);
+}
+
+.l_1-mostafa:hover{
+    background-color: rgb(39, 187, 224);
+    cursor: pointer;
+}
+
+.q_1-mostafa{
+    background-color:rgb(43, 203, 43) ;
+}
+
+.q_1-mostafa:hover{
+    cursor: pointer;
+    background-color:rgb(58, 210, 58) ;
+}
+
+.footer-mostafa{
+    font-size: 20px;
+    text-transform: capitalize;
+    box-shadow: 0px -1px 0px grey;
+    padding-top: 10px;
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+.social-mostafa{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.fff-mostafa{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+
+.ul-mostafa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hr_main-mostafa{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 25px;
+}
+
+.fxi-mostafa{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.nag2-mostafa {
+    font-size: 45px;
+    align-content: center;
+    text-transform: capitalize;
+    padding-left: 50px;
+}
+
+.copy-mostafa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- 
+                                                Table
+----------------------------------------------------------------------------------------------------------- */
+
+
+
+.table-mostafa{
+    width: 70%;
+    margin:0 0 40px 15%;
+    height: 400px;
+    border: solid #eee 2px;
+    color: white;
+}
+
+.table-mostafa p{
+    align-items:center ;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.table-mostafa td{
+    background-color: rgb(32, 174, 209);
+}
+
+.iframe-mostafa{
+    width: 50%;
+    height: 300px;
+    margin:0 25% 50px;
+    border: 2px solid #eee;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ 
+                                                Log in
+------------------------------------------------------------------------------------------------------ */
+
+
+
+.log_win-mostafa{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    height: 600px;
+    font-size: 20px;
+    width: 30%;
+    margin:1% 32.5%;
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 30px;
+}
+
+.welcome_log-mostafa{
+    width: fit-content;
+    margin: 7% 0 10%;
+}
+
+.form_log-mostafa{
+    display: flex;
+    align-items:flex-start ;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+    margin-bottom: 1%;
+}
+
+.form_log-mostafa input{
+    width: 100%;
+    height: 15%;
+    margin: 2% 0 5%;
+    padding-left: 5%;
+}
+
+.form_log-mostafa input:focus{
+    outline: none;
+    border:2px rgb(79, 79, 79) solid ;
+}
+
+.submit_log-mostafa{
+    margin-top: 10%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(46, 213, 254);
+    color: white;
+}
+
+.user_log-mostafa,.pass_log-mostafa{
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 10px;
+}
+
+.submit_log-mostafa:hover{
+    cursor: pointer;
+    background-color: rgb(184, 237, 250);
+}
+
+.span_no_account_log-mostafa{
+    font-weight: bold;
+}
+
+.span_no_account_log-mostafa:hover{
+    cursor: pointer;
+}
+
+.hr_log-mostafa{
+    width: 80%;
+    margin-top: 5%;
+}
+
+.knowledge_log-mostafa{
+    margin: 4% 0 7%;
+    width: 85%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 3%;
+}
+
+.agree_terms_log-mostafa span{
+    font-weight: bold;
+}
+
+.agree_terms_log-mostafa span:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------
+                                                Sign up
+--------------------------------------------------------------------------------------------------------------- */
+
+
+
+.sig_win-mostafa{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    height: 600px;
+    font-size: 20px;
+    width: 30%;
+    margin:1% 32.5%;
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 30px;
+}
+
+
+.welcome_sig-mostafa{
+    width: fit-content;
+    margin: 7% 0 10%;
+}
+
+.form_sig-mostafa{
+    display: flex;
+    align-items:flex-start ;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 65%;
+    margin-bottom: 1%;
+}
+
+.form_sig-mostafa input{
+    
+    height: 15%;
+    margin: 2% 0 5%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.form_sig-mostafa input:focus{
+    outline: none;
+    border:2px rgb(79, 79, 79) solid ;
+}
+
+.submit_sig-mostafa{
+    margin-top: 10%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(46, 213, 254);
+    color: white;
+}
+
+.submit_sig-mostafa:hover{
+    cursor: pointer;
+    background-color: rgb(184, 237, 250);
+}
+
+.user_first_sig-mostafa,.user_last_sig-mostafa,.em_sig-mostafa,.pass_sig-mostafa{
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.hr_sig-mostafa{
+    width: 80%;
+    margin-top: 1%;
+}
+
+.knowledge_sig-mostafa{
+    margin: 1% 0 1%;
+    width: 85%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 3%;
+}
+
+.agree_terms_sig-mostafa span{
+    font-weight: bold;
+}
+
+.agree_terms_sig-mostafa span:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------
+                                                Quiz
+----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+#q_1-mostafa,#q_2-mostafa,#q_3-mostafa,#q_4-mostafa,#q_5-mostafa,#q_6-mostafa,#q_7-mostafa,#q_8-mostafa{
+    width: 90%;
+    background-color: #eee;
+    margin:3% 5%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 1px rgb(79, 79, 79) solid;
+    border-radius: 40px;
+}
+#q_1-mostafa p,#q_2-mostafa p,#q_3-mostafa p,#q_4-mostafa p,#q_5-mostafa p,#q_6-mostafa p,#q_7-mostafa p,#q_8-mostafa p{
+    margin: 2% 5%;
+}
+
+
+#ch_1_quiz-mostafa,#ch_2_quiz-mostafa,#ch_3_quiz-mostafa,#ch_4_quiz-mostafa,#ch_5_quiz-mostafa,#ch_6_quiz-mostafa,#ch_7_quiz-mostafa,#ch_8_quiz-mostafa{
+    width: 90%;
+    margin:3% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ch_1_quiz-mostafa div,#ch_2_quiz-mostafa div,#ch_3_quiz-mostafa div,#ch_4_quiz-mostafa div,#ch_5_quiz-mostafa div,#ch_6_quiz-mostafa div,#ch_7_quiz-mostafa div,#ch_8_quiz-mostafa div{
+    width: 25%;
+    padding: 2% 0;
+    font-size: 40px;
+    border: 1px rgb(79, 79, 79) solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+#ch_1_quiz-mostafa div:hover,#ch_2_quiz-mostafa div:hover,#ch_3_quiz-mostafa div:hover,#ch_4_quiz-mostafa div:hover,#ch_5_quiz-mostafa div:hover,#ch_6_quiz-mostafa div:hover,#ch_7_quiz-mostafa div:hover,#ch_8_quiz-mostafa div:hover{
+    background-color:rgb(184, 237, 250) ;
+    cursor: pointer;
+}
+
+#next-mostafa{
+    width: 15%;
+    margin-left: 42.5%;
+    background-color: rgb(32, 174, 209);
+    color: white;
+    border: transparent solid 1px;
+    border-radius: 20px;
+    font-size:20px ;
+    display: none;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#next-mostafa:hover{
+    cursor: pointer;
+}
+
+#quest_2-mostafa,#quest_3-mostafa,#quest_4-mostafa,#quest_5-mostafa,#quest_6-mostafa,#quest_7-mostafa,#quest_8-mostafa,#quest_9-mostafa{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------
+                                                    Profile
+   -------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+   .profile_win-mostafa{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 620px;
+    font-size: 20px;
+    width: 30%;
+    margin:1% 32.5%;
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 30px;
+}
+
+.welcome_profile-mostafa{
+    width: fit-content;
+    margin: 7% 0 10%;
+}
+
+.form_profile-mostafa{
+    display: flex;
+    align-items:flex-start ;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 65%;
+    margin-bottom: 8%;
+}
+
+.form_profile-mostafa input{
+    width: 100%;
+    height: 16%;
+    margin: 2% 0 5%;
+    padding-left: 5%;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form_profile-mostafa input:focus{
+    outline: none;
+    border:2px rgb(79, 79, 79) solid ;
+}
+
+.user_profile-mostafa,.pass_profile-mostafa{
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 10px;
+}
+
+.audio-mostafa{
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
